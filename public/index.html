@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Applying Basic Styling with CSS</title>
+
+  <!-- REQUIRED: Add a Google Font via HTML link here (example shown) -->
+  <!-- Replace with your own choice from https://fonts.google.com -->
+  <!-- Example: Inter 400 & 700 -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> -->
+
+  <!-- External stylesheet (create styles.css in the same folder) -->
+  <!-- <link rel="stylesheet" href="styles.css" /> -->
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Welcome to River Trail</h1>
+    <p class="tagline">Discover routes, tips, and essentials for your next walk.</p>
+  </header>
+
+  <main class="content">
+    <article class="post">
+      <h2>Choosing the Right Footwear</h2>
+      <figure class="media">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop"
+          alt="Hiking shoes on a trail">
+        <figcaption>Comfort and fit matter more than brand.</figcaption>
+      </figure>
+      <p>Comfortable, supportive footwear reduces fatigue and helps prevent injury. Look for good grip and cushioning.
+      </p>
+
+      <h3>Quick Tips</h3>
+      <ul>
+        <li>Try shoes at the end of the day</li>
+        <li>Test on uneven ground if possible</li>
+        <li>Pair with suitable socks</li>
+      </ul>
+      <p>Read more on our <a href="#" aria-label="Gear Guide">gear guide</a>.</p>
+    </article>
+
+    <article class="post">
+      <h2>Planning a Safe Route</h2>
+      <p>Check the weather, share your plan, and pack water. Choose routes matching your fitness and time.</p>
+
+      <!-- Table for styling -->
+      <table class="compare">
+        <caption>Route Comparison (Beginner Options)</caption>
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Distance</th>
+            <th>Elevation</th>
+            <th>Surface</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Coastal Walk</td>
+            <td>5.2 km</td>
+            <td>120 m</td>
+            <td>Mixed trail</td>
+          </tr>
+          <tr>
+            <td>River Loop</td>
+            <td>4.3 km</td>
+            <td>60 m</td>
+            <td>Paved</td>
+          </tr>
+          <tr>
+            <td>Forest Track</td>
+            <td>6.0 km</td>
+            <td>200 m</td>
+            <td>Dirt path</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <blockquote>&quot;There is no such thing as bad weather, only unsuitable clothing.&quot; &mdash; Alfred Wainwright
+      </blockquote>
+      <p>Explore our <a href="#" aria-label="Route Library">route library</a> to get started.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 River Trail</p>
+  </footer>
+</body>
+
+</html>
