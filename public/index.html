@@ -1,94 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Applying Basic Styling with CSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calista Sugianto | Data Science Portfolio</title>
 
-  <!-- REQUIRED: Add a Google Font via HTML link here (example shown) -->
-  <!-- Replace with your own choice from https://fonts.google.com -->
-  <!-- Example: Inter 400 & 700 -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> -->
-
-  <!-- External stylesheet (create styles.css in the same folder) -->
-  <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <h1>Welcome to River Trail</h1>
-    <p class="tagline">Discover routes, tips, and essentials for your next walk.</p>
-  </header>
+    <!-- Header -->
+    <header class="hero">
+        <nav>
+            <div class="logo">CS</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#toolkit">Toolkit</a></li>
+                <li><a href="#certification">Certifications</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Calista Sugianto">
+            </div>
+            <h1>Calista Sugianto</h1>
+            <h2>Data Analyst | Data Science Student</h2>
+            <p>
+                Master of Data Science student at Deakin University with
+                professional experience in Data Analytics, Artificial Intelligence, Actuarial Science,
+                and Research.
+            </p>
+            <div class="contact-info">
+                <span><i class="icon">📍</i> Melbourne, VIC, Australia</span>
+                <span><i class="icon">📧</i> calistasugianto@gmail.com</span>
+                <span><i class="icon">📱</i> 0482 021 237</span>
+            </div>
+            <a href="https://www.linkedin.com/in/calirene02" class="btn" target="_blank" rel="noopener noreferrer">
+                LinkedIn Profile
+            </a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
 
-  <main class="content">
-    <article class="post">
-      <h2>Choosing the Right Footwear</h2>
-      <figure class="media">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop"
-          alt="Hiking shoes on a trail">
-        <figcaption>Comfort and fit matter more than brand.</figcaption>
-      </figure>
-      <p>Comfortable, supportive footwear reduces fatigue and helps prevent injury. Look for good grip and cushioning.
-      </p>
+    <!-- About Me -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/grad.JPG" alt="Calista Sugianto - Graduation">
+            </div>
+            <div class="about-text">
+                <div class="card glass">
+                    <p>
+                        Enthusiastic and reliable Master of Data Science student with
+                        experience across corporate, education, and volunteer
+                        environments. Passionate about transforming data into
+                        meaningful insights and building intelligent solutions that
+                        support business decision-making.
+                    </p>
+                    <p>
+                        I enjoy data analytics, machine learning, visualisation,
+                        research, and communicating complex concepts in a clear and
+                        engaging way. My goal is to contribute to impactful projects
+                        while continuously developing my technical expertise.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-      <h3>Quick Tips</h3>
-      <ul>
-        <li>Try shoes at the end of the day</li>
-        <li>Test on uneven ground if possible</li>
-        <li>Pair with suitable socks</li>
-      </ul>
-      <p>Read more on our <a href="#" aria-label="Gear Guide">gear guide</a>.</p>
-    </article>
+    <!-- Work Journey -->
+    <section id="journey" class="section alt-bg">
+        <h2>My Work Journey</h2>
 
-    <article class="post">
-      <h2>Planning a Safe Route</h2>
-      <p>Check the weather, share your plan, and pack water. Choose routes matching your fitness and time.</p>
+        <div class="journey-gallery">
+            <figure class="journey-photo">
+                <img src="images/dsf.jpg" alt="Data Analyst at Work">
+                <figcaption>Data Analyst | Dipo Star Finance</figcaption>
+            </figure>
+            <figure class="journey-photo">
+                <img src="images/aswata.png" alt="Actuarial Intern presenting">
+                <figcaption>Actuarial Intern | ASWATA General Insurance</figcaption>
+            </figure>
+        </div>
 
-      <!-- Table for styling -->
-      <table class="compare">
-        <caption>Route Comparison (Beginner Options)</caption>
-        <thead>
-          <tr>
-            <th>Route</th>
-            <th>Distance</th>
-            <th>Elevation</th>
-            <th>Surface</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Coastal Walk</td>
-            <td>5.2 km</td>
-            <td>120 m</td>
-            <td>Mixed trail</td>
-          </tr>
-          <tr>
-            <td>River Loop</td>
-            <td>4.3 km</td>
-            <td>60 m</td>
-            <td>Paved</td>
-          </tr>
-          <tr>
-            <td>Forest Track</td>
-            <td>6.0 km</td>
-            <td>200 m</td>
-            <td>Dirt path</td>
-          </tr>
-        </tbody>
-      </table>
+        <div class="timeline-wrapper">
+            <div class="timeline">
 
-      <blockquote>&quot;There is no such thing as bad weather, only unsuitable clothing.&quot; &mdash; Alfred Wainwright
-      </blockquote>
-      <p>Explore our <a href="#" aria-label="Route Library">route library</a> to get started.</p>
-    </article>
-  </main>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Private Tutor | Self Employed</h3>
+                        <span class="date">Jul 2024 – Present</span>
+                        <p>
+                            Deliver personalised academic support and help students
+                            improve performance and confidence through tailored
+                            learning approaches.
+                        </p>
+                    </div>
+                </div>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 River Trail</p>
-  </footer>
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Data Analyst (Data Intelligence &amp; AI) | Dipo Star Finance</h3>
+                        <span class="date">Sep 2024 – Jun 2026</span>
+                        <p>
+                            Developed and monitored data-driven credit decision models,
+                            evaluated AI tools, and analysed large-scale customer and
+                            financial datasets.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Actuarial Valuation Intern | CAR Life Insurance</h3>
+                        <span class="date">Mar 2024 – May 2024</span>
+                        <p>
+                            Assisted valuation reporting, analysed financial datasets,
+                            and proposed machine learning automation solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Actuarial Intern | ASWATA General Insurance</h3>
+                        <span class="date">Jul 2023 – Sep 2023</span>
+                        <p>
+                            Conducted insurance portfolio analysis and supported
+                            actuarial reporting processes.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+
+            <div class="card project-card">
+                <div class="project-image">
+                    <img src="images/research.jpg" alt="Presenting Undergraduate Thesis">
+                </div>
+                <div class="project-body">
+                    <div class="project-badge">Undergraduate Thesis</div>
+                    <h3>
+                        Classification of Life Insurance Policy Claims Risk
+                        Using Boosting Techniques
+                    </h3>
+                    <p class="project-date">2023–2024</p>
+                    <p>
+                        Applied AdaBoost, XGBoost, CatBoost, and LightGBM to classify
+                        life insurance policy risks using Prudential Life Insurance
+                        Assessment data with 127 features.
+                    </p>
+                    <p>
+                        Results demonstrated high weighted F1 performance and improved
+                        computational efficiency through feature selection and response
+                        class optimisation.
+                    </p>
+                    <a href="https://tinyurl.com/3kj4mn6s" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                        View Summary →
+                    </a>
+                </div>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-image">
+                    <img src="images/web.png" alt="Nusantara Travel Website">
+                </div>
+                <div class="project-body">
+                    <div class="project-badge">Web Development</div>
+                    <h3>Nusantara Travel Website</h3>
+                    <p class="project-date">2026</p>
+                    <p>
+                        A full-stack travel agency website built to sharpen my web
+                        development skills — lets users explore destinations, browse
+                        travel packages, submit enquiries, and manage personalised
+                        travel preferences through a responsive interface.
+                    </p>
+                    <a href="https://github.com/Calsugianto/Nusantara-Travel---Awesome-Website-Feature" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                        View on GitHub →
+                    </a>
+                </div>
+            </div>
+
+            <div class="card project-card">
+                <div class="project-image">
+                    <img src="images/intersection.png" alt="Intersection Rush">
+                </div>
+                <div class="project-body">
+                    <div class="project-badge">Game Development</div>
+                    <h3>Intersection Rush</h3>
+                    <p class="project-date">2026</p>
+                    <p>
+                        A traffic management simulation combining physics-based vehicle
+                        behaviour with object-oriented design — players control traffic
+                        lights to prevent congestion while competing against fixed-time
+                        and adaptive AI traffic controllers.
+                    </p>
+                    <a href="https://github.com/Calsugianto/Intersection-Rush-OOP-HD" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                        View on GitHub →
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Volunteer -->
+    <section id="volunteer" class="section">
+        <h2>Volunteering</h2>
+        <div class="volunteer-container">
+            <div class="volunteer-image">
+                <img src="images/Lingo.jpg" alt="Student Ambassador at LingoTalk">
+            </div>
+            <div class="card glass volunteer-card">
+                <div class="volunteer-badge">Volunteer</div>
+                <h3>Student Ambassador | LingoTalk</h3>
+                <span class="volunteer-date">Jul 2021 – Oct 2021</span>
+                <p>
+                    Promoted a language-learning application while connecting with
+                    fellow ambassadors.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section alt-bg">
+        <h2>Education</h2>
+        <div class="grid">
+            <div class="card glass education-card">
+                <div class="education-icon">🎓</div>
+                <h3>Master of Data Science</h3>
+                <p class="institution">Deakin University</p>
+                <p class="year">2026 - Present</p>
+                <div class="highlight">Vice Chancellor International Scholarship Recipient</div>
+            </div>
+            <div class="card glass education-card">
+                <div class="education-icon">📚</div>
+                <h3>Bachelor of Science</h3>
+                <p class="institution">Parahyangan Catholic University</p>
+                <p class="year">2020 - 2024</p>
+                <div class="highlight">GPA: 3.96 / 4.00</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Toolkit -->
+    <section id="toolkit" class="section">
+        <h2>Technical Toolkit</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h4>Languages &amp; Tools</h4>
+                <div class="skills">
+                    <span>Python</span>
+                    <span>Rstudio</span>
+                    <span>JavaScript</span>
+                    <span>C#</span>
+                    <span>MySQL</span>
+                    <span>LaTeX</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Specialisations</h4>
+                <div class="skills">
+                    <span>Machine Learning</span>
+                    <span>Data Analytics</span>
+                    <span>Statistical Analysis</span>
+                    <span>AI Tools</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h4>Visualisation &amp; Productivity</h4>
+                <div class="skills">
+                    <span>Tableau</span>
+                    <span>Data Visualisation</span>
+                    <span>Microsoft Office</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certification" class="section alt-bg">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+            <div class="card glass cert-card">
+                <div class="cert-icon">📊</div>
+                <h3>Certified International Specialist in Data Visualisation</h3>
+                <p>Tableau | PASAS Institute</p>
+            </div>
+            <div class="card glass cert-card">
+                <div class="cert-icon">🗄️</div>
+                <h3>Enterprise Data Science in Practice, Data Fundmentals</h3>
+                <p>IBM</p>
+            </div>
+            <div class="card glass cert-card">
+                <div class="cert-icon">🤖</div>
+                <h3>The Ultimate MySQL Bootcamp, ChatGPT Prompt Writing: The Complete Guide, Ethics & Generative AI (GenAI)</h3>
+                <p>Udemy</p>
+            </div>
+            <div class="card glass cert-card">
+                <div class="cert-icon">⚖️</div>
+                <h3>Advanced SQL</h3>
+                <p>Kaggle</p>
+            </div>
+            <div class="card glass cert-card">
+                <div class="cert-icon">📈</div>
+                <h3>Indonesian Associate Actuary Certifications</h3>
+                <p>TA1, TA2, TA3, CF1, CF2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing">
+        <div class="closing-content">
+            <h2>Let's Build Data-Driven Solutions Together</h2>
+            <p>
+                Thank you for visiting my portfolio. I am always open to
+                opportunities in Data Analytics, Data Science, AI, and Research.
+            </p>
+            <a href="mailto:calistasugianto@gmail.com" class="btn btn-light">
+                Get In Touch
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Calista Sugianto | Portfolio</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navUl = document.querySelector('nav ul');
+
+        menuBtn.addEventListener('click', () => {
+            navUl.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.card, .timeline-item, .skill-category').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
-
 </html>
