@@ -638,6 +638,24 @@ nav a:hover::after {
     margin: 0 auto;
 }
 
+.volunteer-container + .volunteer-container {
+    margin-top: 70px;
+}
+
+/* Second entry mirrors the first: card on the left, photo on the right */
+.volunteer-container.reverse {
+    grid-template-columns: 1.3fr 0.9fr;
+}
+
+.volunteer-container.reverse .volunteer-image {
+    order: 2;
+}
+
+.volunteer-container.reverse .volunteer-image::before {
+    left: 20px;
+    right: -20px;
+}
+
 .volunteer-image {
     position: relative;
 }
@@ -890,14 +908,22 @@ footer {
         max-width: 400px;
         margin: 0 auto;
     }
-    .volunteer-container {
+    .volunteer-container,
+    .volunteer-container.reverse {
         grid-template-columns: 1fr;
+    }
+    .volunteer-container.reverse .volunteer-image {
+        order: 0;
+    }
+    .volunteer-container + .volunteer-container {
+        margin-top: 50px;
     }
     .volunteer-image {
         max-width: 420px;
         margin: 0 auto;
     }
-    .volunteer-image::before {
+    .volunteer-image::before,
+    .volunteer-container.reverse .volunteer-image::before {
         top: -10px;
         left: -10px;
         right: 10px;
