@@ -539,7 +539,7 @@ nav a:hover::after {
 /* ==================== PROJECTS ==================== */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     max-width: 1150px;
     margin: 0 auto;
@@ -978,6 +978,9 @@ footer {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
     .closing h2 {
         font-size: 1.8rem;
     }
@@ -1007,4 +1010,3 @@ footer {
         padding: 14px 28px;
     }
 }
-
